@@ -2,12 +2,12 @@
   name: ONTAP
   gather_facts: false
   vars:
-    hostname: "172.32.0.152"
-    volname: ansibleVolume
-    vserver: ansible_vserver
+    hostname:
+    volname:
+    vserver:
     aggrname:
-    size: 10
-    aggr: aggr1
+    size: 
+    aggr:
     e_policy: 
     qos_policy:
     export_policy:
@@ -28,6 +28,7 @@
       username: "{{ netapp_username }}"
       password: "{{ netapp_password }}"
       https: true
+      use_rest: never
       validate_certs: false
       efficiency_policy: "{{ e_policy }}"
       qos_policy_group: "{{ qos_policy }}"
