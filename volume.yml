@@ -10,7 +10,7 @@
     aggr:
     e_policy: 
     qos_policy:
-    export_policy:
+    export_policy: default
     state: present
   tasks:
   - name: "{{ tower_job_template_name }}"
@@ -20,7 +20,7 @@
       aggregate_name: "{{ aggrname }}"
       size: "{{ size }}"
       size_unit: gb
-      policy: "{{ export_policy }}"
+      export_policy: "{{ export_policy }}"
       junction_path: "{{ '' if not export_policy else '/' + volname }}"
       space_guarantee: "none"
       vserver: "{{ vserver }}"
