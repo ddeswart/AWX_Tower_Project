@@ -21,5 +21,3 @@
       https: true
       use_rest: auto
       validate_certs: false
-      efficiency_policy: "{{ e_policy }}"
-      qos_policy_group: "{{ qos_policy }}"
