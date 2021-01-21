@@ -2,15 +2,6 @@
   name: ONTAP
   gather_facts: false
   vars:
-    hostname:
-    volname:
-    vserver:
-    aggrname:
-    size: 
-    aggr:
-    e_policy: 
-    qos_policy:
-    export_policy: default
     state: present
   tasks:
   - name: "{{ tower_job_template_name }}"
