@@ -3,7 +3,7 @@
   gather_facts: false
   vars:
     state: present
-    export_policy:
+    export_policy: default
   tasks:
   - name: "{{ tower_job_template_name }}"
     netapp.ontap.na_ontap_volume:
