@@ -4,6 +4,8 @@
   vars:
     state: present
     export_policy: default
+    aggrname:
+    size:
   tasks:
   - name: "{{ tower_job_template_name }}"
     netapp.ontap.na_ontap_volume:
